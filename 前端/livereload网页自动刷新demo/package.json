@@ -1,0 +1,17 @@
+{
+  "name": "jiqiren",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "connect":"^3.6.3",
+    "livereload":"^0.6.2",
+    "serve-static":"^1.12.4"
+  }
+}
