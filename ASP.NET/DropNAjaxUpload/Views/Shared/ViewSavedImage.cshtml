@@ -1,0 +1,25 @@
+﻿@model ImageUploadDemo.Models.ImageModel
+
+<div id="viewSavedContentAreaDiv">
+    <h4>This is your recently uploaded image details:</h4>
+    <table>
+        <tr>
+            <td class="pvTdFirst">
+                <span>Image Name</span>
+            </td>
+            <td class="pvTdSecond">
+                <span>@Model.ImageName</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="pvTdFirst"><br />
+                <span>Uploaded Image</span>
+            </td>
+            <td class="pvTdSecond"><br />
+                <div >
+                    <img class="viewSavedImage" src="@Url.Content(String.Format("~/ImagesUploaded/{0}", Model.ImagePath))">
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
