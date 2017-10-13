@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>测</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+    *{margin: 0;padding: 0}
+        input[type='range']{width: 100%;}
+        p{font-size: 50px;}
+        #cc{display: block; background: #eee; }
+    </style>
+
+</head>
+
+<body>
+    <label id="cc">
+        0-255
+        <input type="range" value="0" min="0" max="255" id="color_R">
+    </label>
+
+    <p id="html">
+
+    </p>
+
+    <script>
+        var follow = false;
+        var winWidth = 0;
+        window.onload = function () {
+            var label = document.getElementById("cc");
+            label.onmouseenter = function (ev) {
+                winWidth = window.innerWidth;
+                follow = true;
+                console.log(follow);
+            }
+            label.onmouseleave = function (ev) {
+               follow = false;
+               console.log(follow);
+            }
+            document.onmousemove = function (ev) {
+               if(follow){
+                    var value = Math.floor(ev.x/winWidth * 256);
+                    console.log(value);
+                    document.getElementById("color_R").value =value;
+
+                    var show = document.getElementById("html");
+                    var html = "10进制:"+value+
+                                "<br><br><br>2进制:"+value.toString(2)+                                
+                                "<br>8进制:"+value.toString(8)+
+                                "<br>16禁止小写:"+value.toString(16)+
+                                "<br>16禁止大写:"+value.toString(16).toUpperCase();
+                    show.innerHTML = html;
+               }
+            }
+        }
+    </script>
+</body>
+</html>
