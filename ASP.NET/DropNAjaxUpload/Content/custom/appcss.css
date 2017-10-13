@@ -1,0 +1,102 @@
+﻿body {
+    background-color: lightgoldenrodyellow;
+    font-family: Calibri;
+}
+
+h3 {
+    color: #CC3300;
+}
+
+h4 {
+    color: #CC3300;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+    a:link, a:visited,
+    a:active {
+        color: blue;
+    }
+
+    a:hover {
+        background-color: #FF9900;
+    }
+
+.navigationPanel {
+    float: left;
+    height: 600px;
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 2px solid #FF9900;
+}
+
+#viewSavedContentAreaDiv {
+    border-style: dotted;
+    border: 1px solid #FF9900;
+    margin-left: 10px;
+}
+
+.pvTdFirst {
+    width: 35%;
+    text-align: left;
+}
+
+.pvTdSecond {
+    width: 60%;
+    text-align: left;
+}
+
+#pvContainerDiv {
+    width: 360px;
+    height: 120px;
+}
+
+.viewSavedImage {
+    width: 200px;
+    height: 100px;
+}
+
+.containerDiv {
+    width: 220px;
+    height: 100px;
+    border: 1px dotted;
+}
+
+    .containerDiv img {
+        width: 100%;
+        height: 100%;
+    }
+
+#btnViewImage {
+    margin-left: 10px;
+}
+
+.warrningMessage {
+    color: red;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+td {
+    vertical-align: text-top;
+}
+
+#txtImageName {
+    width: 220px;
+}
+
+#selectedImage {
+    width: 200px;
+}
+
+#cameraArea {
+    width: 200px;
+}

@@ -1,0 +1,47 @@
+﻿
+<h3>Uploading Image by Dragging and Dropping:</h3>
+<table>
+    <tr>
+        <td>
+            <span >Image Name</span>
+
+        </td>
+        <td>
+            <input type="text" id="txtImageName" />
+                
+        </td>
+        <td>            
+            <div id="validateImageInput" class="warrningMessage">Please enter image name</div>           
+        </td>
+    </tr>    
+    <tr>
+        <td>
+            <br />
+            <span>Drop Image</span>
+        </td>
+        <td>
+            <br />
+            <div id='dropAreaDiv' class='containerDiv'></div>            
+        </td>
+        <td>
+            <br />
+            <div id="validateDroppedImage" class="warrningMessage">Please drop image file</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br />
+            <input type="button" id="btnDroppedSave" value="Save Dropped Image" />
+        </td>
+        <td>
+            <br />
+            <input type="button" id="btnViewImage" value="View Saved Image" />
+        </td>
+    </tr>
+</table>
+<br />
+
+@*Container of  ViewSavedImage partial view*@
+<div id="pvContainerDiv">
+</div>
+<script src="~/Scripts/Js/drag-and-dropping.js"></script>

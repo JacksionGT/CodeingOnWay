@@ -1,0 +1,46 @@
+﻿
+<h3>Uploading Image by Browsing File:</h3>
+<table>
+    <tr>
+        <td>
+            <span>Image Name</span>
+        </td>
+        <td>
+            <input type="text" id="txtImageName" />           
+        </td>
+        <td>
+            <div id="validateImageInput" class="warrningMessage">Please enter image name</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br />
+            <span>Upload Image</span>
+        </td>
+        <td>
+            <br />
+            <input type="file" id="selectedImage" name="image" />
+        </td>
+        <td>
+            <br />
+            <div id="validateSelectedImage" class="warrningMessage">Please browse image file</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br />
+            <input type="button" id="btnBrowsedSave" value="Save Browsed Image" />
+        </td>
+        <td>
+            <br />
+            <input type="button" id="btnViewImage" value="View Saved Image" />
+        </td>
+    </tr>
+</table>
+<br />
+<br />
+@*Container of  ViewSavedImage partial view*@
+<div id="pvContainerDiv">
+</div>
+
+<script src="~/Scripts/Js/file-browsing.js"></script>
